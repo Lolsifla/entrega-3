@@ -1,8 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/styles.css">
     <title>Mi primer sitio</title>
 </head>
 <body>
@@ -10,7 +11,7 @@
         <figure>
             <img src="assets/logo.png" alt="Logotipo de la pagina se muestra un icono azul con un mouse apretandolo" height="150">
         </figure>
-        <nav>
+        <nav class="navbar">
             <ul>
                 <li><a href="#inicio">Inicio</a></li>
                 <li><a href="/pages/sobre-mi.html">Sobre Mi</a></li>
@@ -23,23 +24,25 @@
     </header>
 
     <main>
-        <h1>Bienvenido a mi sitio web</h1>
-        <figure>
+        <section id="inicio">
+            <h1>Bienvenido a mi sitio web</h1>
+            <figure>
             <img src="/assets/b02e66661367a8c01ed62dcfd01fc8fb.jpg" alt="Imagen de un emoji levantando los pulagres" height="200">
              <figcaption>¡Gracias por visitar mi sitio web! Espero que encuentres toda la información que buscas sobre mí, mis proyectos, habilidades y aspiraciones.</figcaption>
-        </figure>
-        <article>
-            <h2>¿Que quiero demostrar con esta pagina?</h2>
-            <p>Quiero demostrar mis habilidades en desarrollo web, mostrando mi experiencia, proyectos y aspiraciones en el campo de la tecnología. Este sitio es una plataforma para compartir mi pasión por la programación y conectar con otros profesionales del sector.</p>
-            <h3>¿Qué puedes encontrar en esta página?</h3>
-            <ul>
-                <li>Información sobre mí y mi historia</li>
-                <li>Proyectos en los que he trabajado</li>
-                <li>Habilidades técnicas que poseo</li>
-                <li>Mis aspiraciones profesionales</li>
-            </ul>
-            <h4>APRIETA EN LAS PESTAÑAS DE ARRIBA PARA VER TODAS LAS SECCIONES</h4>
-        </article>
+            </figure>
+            <article>
+                <h2>¿Que quiero demostrar con esta pagina?</h2>
+                <p>Quiero demostrar mis habilidades en desarrollo web, mostrando mi experiencia, proyectos y aspiraciones en el campo de la tecnología. Este sitio es una plataforma para compartir mi pasión por la programación y conectar con otros profesionales del sector.</p>
+                <h3>¿Qué puedes encontrar en esta página?</h3>
+                <ul class="listado">
+                    <li>Información sobre mí y mi historia</li>
+                    <li>Proyectos en los que he trabajado</li>
+                    <li>Habilidades técnicas que poseo</li>
+                    <li>Mis aspiraciones profesionales</li>
+                </ul>
+                <h4>APRIETA EN LAS PESTAÑAS DE ARRIBA PARA VER TODAS LAS SECCIONES</h4>
+            </article>
+        </section>
     </main>
 
     <footer>
@@ -48,7 +51,7 @@
             <p>Si estás interesado en colaborar conmigo, no dudes en contactarme en mis redes sociales.</p>
             <article>
                 <h3>Redes sociales</h3>
-                <ul>
+                <ul class="listado">
                     <li><a href="https://www.instagram.com/" target="_blank">Instagram</a></li>
                     <li><a href="https://www.facebook.com/" target="_blank">Facebook</a></li>
                     <li><a href="https://www.linkedin.com/" target="_blank">LinkedIn</a></li>
