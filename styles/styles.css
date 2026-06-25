@@ -1,3 +1,9 @@
+/* reset */
+* {
+    margin: 0;
+    padding: 0;
+}
+
 /* paleta de colores */
 :root{
     --color-primario: #1A1A2E;
@@ -10,18 +16,38 @@
 /* font-family: "Iosevka Charon", monospace; */
 /* font-weight: 300; */
 
+
 header{
+    display: flex;
+    justify-content: space-between;
     background-color: var(--color-primario);
-    padding: 20px;
-    text-align: center;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.logo{
+    height: 100px;
+}
+
+.navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 }
 
 .navbar ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
     color: var(--color-acento);
     padding: 0;
-    list-style-position: inside;
 }
 
+.navbar ul li{
+    list-style: none;
+}
 .navbar a{
     color: var(--color-secundario);
     font-family: "Iosevka Charon", monospace;
@@ -30,10 +56,22 @@ header{
 }
 
 main{
-    padding: 15px;
+    padding: 25px;
     background-color: var(--color-secundario);
     font-family: "Iosevka Charon", monospace;
     color: var(--color-primario)
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+article{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
 }
 
 h1{
@@ -54,12 +92,41 @@ h4{
     font-weight: 550;
 }
 
-.listado li::marker{
+.estilo-listado li::marker{
     color: var(--color-acento);
 }
+
+.listado-habilidades{
+    display: flex;
+    flex-direction: row;
+}
+
+.listado-habilidades div ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding-top: 15px;
+}
+
+.listado-aspiraciones{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.listado-aspiraciones div ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding-top: 15px;
+}
+
 footer{
-    padding: 15px;
+    padding: 25px;
     background-color: var(--color-secundario);
     font-family: "Iosevka Charon", monospace;
     color: var(--color-primario)
 }
+
